@@ -1,5 +1,5 @@
 {
-  "name": "@meils/fd-func",
+  "name": "@meils/fd-ares",
   "version": "0.0.1",
   "description": "函数库",
   "main": "./dist/index.cjs",
