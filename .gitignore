@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+.nyc_output/
+coverage/
+.rpt2_cache/
+**/dist/*.js

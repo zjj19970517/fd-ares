@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "module": "esnext",
+    "target": "es2019",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*", "types/**/*", "src/modules/**/*"],
+  "exclude": ["docs/**/*", "build/**/*", "node_modules"]
+}

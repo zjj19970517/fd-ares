@@ -1,0 +1,47 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "extends": ["plugin:@typescript-eslint/recommended", "airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "env": {"browser": true, "node": true, "jest": true},
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["error"],
+    "no-use-before-define": "off",
+    "no-unused-vars":"off",
+    "class-methods-use-this": "off",
+    "consistent-return": ["off"],
+    "max-len": ["error", { "code": 120 , "ignoreTrailingComments": true  }],
+    "no-plusplus":"off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      { "functions": false, "classes": false }
+    ],
+    "import/extensions": ["error", "never"],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "always-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+      }],
+    "@typescript-eslint/member-delimiter-style":["error"],
+    "no-var-requires": false
+    },
+  "settings": {
+    "import/extensions": [".ts", ".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  },
+  "globals":{
+    "describe":true,
+    "it":true
+  }
+}
